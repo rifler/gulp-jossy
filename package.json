@@ -1,0 +1,29 @@
+{
+  "name": "gulp-jossy",
+  "version": "1.0.0",
+  "description": "gulp plugin for Jossy bundler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rifler/gulp-jossy.git"
+  },
+  "keywords": [
+    "Jossy",
+    "gulpplugin",
+    "javascript"
+  ],
+  "author": "Dmitrii Kanatnikov (steve111@yandex.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rifler/gulp-jossy/issues"
+  },
+  "homepage": "https://github.com/rifler/gulp-jossy#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1",
+    "jossy": "git://github.com/rifler/Jossy.git#571d478b9a97b275968c9708b3da51d704abd515"
+  }
+}
