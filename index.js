@@ -8,7 +8,7 @@ var jossyInstance;
 var pluginName = 'gulp-jossy';
 
 function getJossyInstance () {
-    if (jossyInstance) {
+    if (!jossyInstance) {
         jossyInstance = new Jossy();
     }
 
