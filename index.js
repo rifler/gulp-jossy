@@ -1,8 +1,7 @@
 'use strict';
-var path = require('path');
 var gutil = require('gulp-util');
 var through = require('through2');
-var Jossy = require('Jossy').Jossy;
+var Jossy = require('jossy').Jossy;
 var jossyInstance;
 
 var pluginName = 'gulp-jossy';
