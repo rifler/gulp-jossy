@@ -1,5 +1,5 @@
 'use strict';
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var through = require('through2');
 var Jossy = require('jossy').Jossy;
 var jossyInstance;
@@ -24,7 +24,7 @@ module.exports = function (opts) {
         }
 
         if (file.isStream()) {
-            cb(new gutil.PluginError(pluginName, 'Streaming not supported'));
+            cb(new PluginError(pluginName, 'Streaming not supported'));
             return;
         }
 
@@ -34,7 +34,7 @@ module.exports = function (opts) {
                 cb(null, file);
             })
             .catch(function (err) {
-                cb(new gutil.PluginError(pluginName, err, {
+                cb(new PluginError(pluginName, err, {
                     fileName: file.path,
                     showProperties: false
                 }));
