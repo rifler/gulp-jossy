@@ -1,6 +1,6 @@
 {
   "name": "gulp-jossy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "gulp plugin for Jossy bundler",
   "main": "index.js",
   "scripts": {
